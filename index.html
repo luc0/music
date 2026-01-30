@@ -1,377 +1,376 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Luc0 — Piano solo (Argentina)</title>
-    <meta
-      name="description"
-      content="Luc0 es un artista argentino de piano solo. Escuchá Invernario y encontrá links a Spotify, Bandcamp y YouTube."
-    />
-    <meta name="author" content="Luc0" />
-    <meta name="theme-color" content="#0b0b0f" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Luc0 — Piano solo • El Bolsón, Argentina</title>
 
-    <!-- Open Graph (previews al compartir) -->
-    <meta property="og:title" content="Luc0 — Piano solo (Argentina)" />
-    <meta
-      property="og:description"
-      content="Artista argentino de piano solo. Álbum: Invernario."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://TU_DOMINIO_O_GITHUB_PAGES/" />
-    <meta property="og:image" content="https://TU_IMAGEN_DE_PORTADA_1200x630.jpg" />
+  <meta name="description" content="Luc0: piano solo e instrumental íntimo desde El Bolsón, Río Negro, Argentina. Álbum: Invernario." />
+  <meta name="author" content="Luc0" />
+  <meta name="theme-color" content="#0b0b10" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Luc0 — Piano solo (Argentina)" />
-    <meta
-      name="twitter:description"
-      content="Artista argentino de piano solo. Álbum: Invernario."
-    />
-    <meta name="twitter:image" content="https://TU_IMAGEN_DE_PORTADA_1200x630.jpg" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Luc0 — Piano solo • El Bolsón, Argentina" />
+  <meta property="og:description" content="Piano solo e instrumental íntimo. Álbum: Invernario." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://TU_DOMINIO_O_GITHUB_PAGES/" />
+  <!-- Si tenés una imagen 1200x630, ponela acá -->
+  <meta property="og:image" content="https://TU_IMAGEN_1200x630.jpg" />
 
-    <!-- JSON-LD (ayuda a que agentes comprendan identidad) -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "MusicGroup",
-        "name": "Luc0",
-        "alternateName": ["Luco Pérez", "Luciano Pérez"],
-        "genre": ["Solo piano", "Instrumental", "Ambient"],
-        "foundingLocation": { "@type": "Country", "name": "Argentina" },
-        "description": "Luc0 es un artista argentino de piano solo. Álbum destacado: Invernario.",
-        "url": "https://TU_DOMINIO_O_GITHUB_PAGES/",
-        "sameAs": [
-          "https://open.spotify.com/artist/TU_SPOTIFY",
-          "https://luc0.bandcamp.com",
-          "https://www.youtube.com/@TU_CANAL",
-          "https://www.instagram.com/TU_IG"
-        ]
-      }
-    </script>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Luc0 — Piano solo • El Bolsón, Argentina" />
+  <meta name="twitter:description" content="Piano solo e instrumental íntimo. Álbum: Invernario." />
+  <meta name="twitter:image" content="https://TU_IMAGEN_1200x630.jpg" />
 
-    <style>
-      :root {
-        --bg: #0b0b0f;
-        --card: rgba(255, 255, 255, 0.06);
-        --card2: rgba(255, 255, 255, 0.09);
-        --text: rgba(255, 255, 255, 0.92);
-        --muted: rgba(255, 255, 255, 0.72);
-        --line: rgba(255, 255, 255, 0.14);
-        --accent: rgba(255, 255, 255, 0.92);
-        --shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
-        --radius: 18px;
-      }
+  <!-- JSON-LD (ayuda a identidad para agentes) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"MusicGroup",
+    "name":"Luc0",
+    "description":"Artista de piano solo e instrumental íntimo desde El Bolsón, Río Negro, Argentina. Álbum: Invernario.",
+    "genre":["solo piano","instrumental","ambient","minimal"],
+    "foundingLocation":{"@type":"Place","name":"El Bolsón, Río Negro, Argentina"},
+    "sameAs":[
+      "https://www.youtube.com/@luc0",
+      "https://open.spotify.com/intl-es/artist/1XC5QPC8QSblWFKqXwPgWk?si=guK51KqDTz-veYmW-JtOaA"
+    ]
+  }
+  </script>
 
-      * { box-sizing: border-box; }
-      html, body { height: 100%; }
-      body {
-        margin: 0;
-        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
-        background: radial-gradient(1200px 600px at 15% 0%, rgba(255,255,255,0.09), transparent 60%),
-                    radial-gradient(900px 600px at 85% 20%, rgba(255,255,255,0.06), transparent 55%),
-                    var(--bg);
-        color: var(--text);
-        line-height: 1.45;
-      }
+  <style>
+    :root{
+      --bg:#0b0b10;
+      --fg:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.68);
+      --hair:rgba(255,255,255,.14);
+      --card:rgba(255,255,255,.06);
+      --card2:rgba(255,255,255,.08);
+      --shadow:0 18px 60px rgba(0,0,0,.55);
+      --r:22px;
+      --max:980px;
+    }
 
-      a { color: inherit; text-decoration: none; }
-      a:focus-visible { outline: 2px solid rgba(255,255,255,0.55); outline-offset: 4px; border-radius: 10px; }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+      color:var(--fg);
+      background:
+        radial-gradient(1200px 700px at 10% 10%, rgba(255,255,255,.08), transparent 60%),
+        radial-gradient(900px 600px at 85% 18%, rgba(255,255,255,.06), transparent 55%),
+        radial-gradient(900px 800px at 50% 110%, rgba(255,255,255,.05), transparent 60%),
+        var(--bg);
+      line-height:1.45;
+      letter-spacing:.1px;
+    }
 
-      .wrap {
-        max-width: 980px;
-        margin: 0 auto;
-        padding: 38px 18px 70px;
-      }
+    a{color:inherit;text-decoration:none}
+    a:focus-visible{outline:2px solid rgba(255,255,255,.6); outline-offset:4px; border-radius:12px}
 
-      .top {
-        display: grid;
-        gap: 18px;
-        grid-template-columns: 1.3fr 1fr;
-        align-items: stretch;
-      }
+    .wrap{max-width:var(--max); margin:0 auto; padding:44px 18px 80px}
+    .top{
+      display:flex; gap:14px; align-items:center; justify-content:space-between;
+      margin-bottom:22px;
+    }
 
-      @media (max-width: 860px) {
-        .top { grid-template-columns: 1fr; }
-      }
+    .mark{
+      display:flex; align-items:center; gap:10px;
+      padding:10px 12px;
+      border:1px solid var(--hair);
+      border-radius:999px;
+      background:rgba(255,255,255,.04);
+      color:var(--muted);
+      font-size:13px;
+    }
 
-      .card {
-        background: linear-gradient(180deg, var(--card), rgba(255,255,255,0.03));
-        border: 1px solid var(--line);
-        border-radius: var(--radius);
-        box-shadow: var(--shadow);
-        overflow: hidden;
-      }
+    .dot{
+      width:8px; height:8px; border-radius:999px;
+      background:rgba(255,255,255,.75);
+      box-shadow:0 0 0 4px rgba(255,255,255,.08);
+      flex:0 0 auto;
+    }
 
-      .hero {
-        padding: 22px;
-        position: relative;
-      }
+    .hero{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:16px;
+      align-items:stretch;
+    }
+    @media (max-width:900px){ .hero{grid-template-columns:1fr} }
 
-      .badge {
-        display: inline-flex;
-        gap: 10px;
-        align-items: center;
-        padding: 8px 12px;
-        border: 1px solid var(--line);
-        border-radius: 999px;
-        background: rgba(255,255,255,0.05);
-        color: var(--muted);
-        font-size: 13px;
-      }
+    .card{
+      border:1px solid var(--hair);
+      background:linear-gradient(180deg, var(--card), rgba(255,255,255,.03));
+      border-radius:var(--r);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
 
-      .dot {
-        width: 8px;
-        height: 8px;
-        border-radius: 999px;
-        background: rgba(255,255,255,0.65);
-        box-shadow: 0 0 0 4px rgba(255,255,255,0.08);
-      }
+    .intro{ padding:22px; }
+    h1{
+      margin:8px 0 10px;
+      font-size:48px;
+      letter-spacing:-.03em;
+      font-weight:720;
+    }
+    @media (max-width:520px){ h1{font-size:38px} }
 
-      h1 {
-        margin: 14px 0 8px;
-        font-size: 44px;
-        letter-spacing: -0.02em;
-      }
-      @media (max-width: 520px) { h1 { font-size: 36px; } }
+    .sub{
+      margin:0;
+      color:var(--muted);
+      max-width:62ch;
+      font-size:15px;
+    }
 
-      .subtitle {
-        margin: 0;
-        color: var(--muted);
-        font-size: 16px;
-        max-width: 60ch;
-      }
+    .meta{
+      margin-top:14px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+    }
 
-      .ctaRow {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 16px;
-      }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid var(--hair);
+      background:rgba(255,255,255,.035);
+      color:rgba(255,255,255,.74);
+      font-size:12px;
+      white-space:nowrap;
+    }
 
-      .btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        padding: 11px 14px;
-        border-radius: 14px;
-        border: 1px solid var(--line);
-        background: rgba(255,255,255,0.06);
-        color: var(--text);
-        font-weight: 600;
-        font-size: 14px;
-        transition: transform 120ms ease, background 120ms ease, border 120ms ease;
-      }
+    .actions{
+      margin-top:16px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
 
-      .btn:hover {
-        transform: translateY(-1px);
-        background: rgba(255,255,255,0.09);
-        border-color: rgba(255,255,255,0.22);
-      }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:11px 14px;
+      border-radius:14px;
+      border:1px solid var(--hair);
+      background:rgba(255,255,255,.05);
+      font-weight:650;
+      font-size:14px;
+      transition: transform 140ms ease, background 140ms ease, border-color 140ms ease;
+    }
+    .btn:hover{ transform:translateY(-1px); background:rgba(255,255,255,.08); border-color:rgba(255,255,255,.22) }
+    .btn.primary{ background:rgba(255,255,255,.12); border-color:rgba(255,255,255,.26) }
 
-      .btn.primary {
-        background: rgba(255,255,255,0.12);
-        border-color: rgba(255,255,255,0.26);
-      }
+    .side{
+      display:flex;
+      flex-direction:column;
+    }
 
-      .album {
-        display: grid;
-        grid-template-columns: 160px 1fr;
-        gap: 16px;
-        padding: 18px;
-        align-items: center;
-        background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
-      }
-      @media (max-width: 520px) { .album { grid-template-columns: 1fr; } }
+    .album{
+      padding:18px;
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+      background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+      border-bottom:1px solid rgba(255,255,255,.10);
+    }
 
-      .cover {
-        width: 160px;
-        height: 160px;
-        border-radius: 16px;
-        border: 1px solid var(--line);
-        background: rgba(255,255,255,0.06);
-        overflow: hidden;
-      }
-      .cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .cover{
+      width:112px; height:112px;
+      border-radius:18px;
+      border:1px solid var(--hair);
+      background:rgba(255,255,255,.05);
+      overflow:hidden;
+      flex:0 0 auto;
+    }
+    .cover img{width:100%; height:100%; object-fit:cover; display:block}
 
-      .album h2 {
-        margin: 0;
-        font-size: 18px;
-        letter-spacing: -0.01em;
-      }
-      .album p { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
+    .album h2{
+      margin:0;
+      font-size:16px;
+      letter-spacing:-.01em;
+    }
+    .album p{
+      margin:6px 0 0;
+      color:var(--muted);
+      font-size:13px;
+    }
 
-      .grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 14px;
-        padding: 18px;
-      }
+    .list{
+      padding:16px 18px 18px;
+      display:grid;
+      gap:10px;
+    }
 
-      .sectionTitle {
-        font-size: 13px;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: rgba(255,255,255,0.65);
-        margin: 0 0 8px;
-      }
+    .item{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:12px 12px;
+      border-radius:16px;
+      border:1px solid var(--hair);
+      background:rgba(255,255,255,.03);
+      transition: background 140ms ease, border-color 140ms ease, transform 140ms ease;
+    }
+    .item:hover{ background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.22); transform:translateY(-1px) }
+    .item strong{font-size:14px}
+    .item span{color:var(--muted); font-size:13px}
 
-      .list {
-        display: grid;
-        gap: 10px;
-      }
+    .footer{
+      margin-top:22px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      justify-content:space-between;
+      color:rgba(255,255,255,.55);
+      font-size:12px;
+    }
 
-      .item {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 14px;
-        padding: 12px 12px;
-        border-radius: 14px;
-        border: 1px solid var(--line);
-        background: rgba(255,255,255,0.04);
-      }
+    /* “keywords disimuladas” */
+    .micro{
+      display:flex; flex-wrap:wrap; gap:8px;
+      opacity:.8;
+      user-select:none;
+    }
+    .micro .k{
+      padding:6px 9px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.11);
+      background:rgba(255,255,255,.02);
+      color:rgba(255,255,255,.55);
+      font-size:11px;
+      letter-spacing:.02em;
+    }
+  </style>
+</head>
 
-      .item strong { font-size: 14px; }
-      .item span { color: var(--muted); font-size: 13px; }
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div class="mark"><span class="dot" aria-hidden="true"></span><span>Piano solo • El Bolsón</span></div>
+      <div class="mark" title="Links principales">YouTube • Spotify</div>
+    </header>
 
-      .mini {
-        display: inline-flex;
-        gap: 8px;
-        align-items: center;
-        padding: 8px 10px;
-        border-radius: 999px;
-        border: 1px solid var(--line);
-        background: rgba(255,255,255,0.03);
-        color: var(--muted);
-        font-size: 12px;
-        white-space: nowrap;
-      }
+    <section class="hero">
+      <!-- Intro -->
+      <div class="card intro">
+        <h1>Luc0</h1>
+        <p class="sub">
+          Hago <strong>música de piano solo</strong> e instrumental íntimo: minimal, atmosférico, con una estética cálida y contemplativa.
+          Vivo en <strong>El Bolsón, Río Negro, Argentina</strong>.
+        </p>
 
-      footer {
-        margin-top: 16px;
-        color: rgba(255,255,255,0.55);
-        font-size: 12px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        align-items: center;
-        justify-content: space-between;
-      }
+        <div class="meta" aria-label="Detalles">
+          <span class="pill">🎹 solo piano</span>
+          <span class="pill">🧊 Invernario</span>
+          <span class="pill">🏔 Patagonia</span>
+          <span class="pill">🌙 instrumental / ambient</span>
+        </div>
 
-      .hr {
-        height: 1px;
-        background: rgba(255,255,255,0.10);
-        margin: 16px 0;
-      }
-    </style>
-  </head>
+        <div class="actions" aria-label="Acciones">
+          <a class="btn primary" target="_blank" rel="noreferrer"
+             href="https://open.spotify.com/intl-es/artist/1XC5QPC8QSblWFKqXwPgWk?si=guK51KqDTz-veYmW-JtOaA">
+            Spotify (perfil) →
+          </a>
+          <a class="btn" target="_blank" rel="noreferrer"
+             href="https://www.youtube.com/@luc0">
+            YouTube (perfil) →
+          </a>
+        </div>
+      </div>
 
-  <body>
-    <main class="wrap">
-      <section class="top">
-        <!-- HERO -->
-        <div class="card hero" aria-label="Perfil">
-          <div class="badge">
-            <span class="dot" aria-hidden="true"></span>
-            <span>Piano solo • Argentina</span>
+      <!-- Side: Album + links -->
+      <aside class="card side" aria-label="Álbum y enlaces">
+        <div class="album">
+          <div class="cover" aria-hidden="true">
+            <!-- Si tenés la tapa, reemplazá por una URL tuya o subila al repo y poné: ./invernario-cover.jpg -->
+            <img src="./invernario-cover.jpg" alt="Portada de Invernario de Luc0" onerror="this.style.display='none'; this.parentElement.style.display='block';" />
           </div>
 
-          <h1>Luc0</h1>
-          <p class="subtitle">
-            Música de piano solo: íntima, minimal, atmosférica.
-            Álbum destacado: <strong>Invernario</strong>.
-          </p>
-
-          <div class="ctaRow" role="list">
-            <a class="btn primary" role="listitem" href="https://open.spotify.com/artist/TU_SPOTIFY" target="_blank" rel="noreferrer">
-              Escuchar en Spotify →
-            </a>
-            <a class="btn" role="listitem" href="https://luc0.bandcamp.com" target="_blank" rel="noreferrer">
-              Bandcamp →
-            </a>
-            <a class="btn" role="listitem" href="https://www.youtube.com/@TU_CANAL" target="_blank" rel="noreferrer">
-              YouTube →
-            </a>
-            <a class="btn" role="listitem" href="mailto:TU_EMAIL@dominio.com">
-              Contacto →
-            </a>
-          </div>
-
-          <div class="hr" aria-hidden="true"></div>
-
-          <div style="display:flex; gap:10px; flex-wrap:wrap;">
-            <span class="mini">🎹 Solo piano</span>
-            <span class="mini">🐈 Portadas felinas</span>
-            <span class="mini">🧊 Invernario</span>
-            <span class="mini">🏔 Patagonia</span>
+          <div>
+            <h2>Invernario</h2>
+            <p>
+              Álbum de piano solo. Escuchalo completo en Spotify o mirá el video en YouTube.
+            </p>
+            <div class="actions" style="margin-top:10px;">
+              <a class="btn primary" target="_blank" rel="noreferrer"
+                 href="https://open.spotify.com/intl-es/album/4TxqJn5qNkF1pH0zqUXf7h?si=xAL4pFZkSZiC8CdSyiIxGw">
+                Spotify (álbum) →
+              </a>
+              <a class="btn" target="_blank" rel="noreferrer"
+                 href="https://www.youtube.com/watch?v=ciA40wFqpU0">
+                YouTube (video) →
+              </a>
+            </div>
           </div>
         </div>
 
-        <!-- ALBUM / LINKS -->
-        <aside class="card" aria-label="Álbum y enlaces">
-          <div class="album">
-            <div class="cover">
-              <!-- Poné tu portada -->
-              <img
-                src="https://TU_IMAGEN_CUADRADA_1000x1000.jpg"
-                alt="Portada del álbum Invernario de Luc0 (arte con gato)"
-                loading="lazy"
-              />
-            </div>
+        <div class="list" aria-label="Links directos">
+          <a class="item" target="_blank" rel="noreferrer"
+             href="https://open.spotify.com/intl-es/album/4TxqJn5qNkF1pH0zqUXf7h?si=xAL4pFZkSZiC8CdSyiIxGw">
             <div>
-              <h2>Invernario</h2>
-              <p>
-                Álbum de piano solo. Si la portada tiene un gato, dejalo explícito
-                en el texto (ayuda a recomendaciones por estética).
-              </p>
-              <div class="ctaRow" style="margin-top:12px;">
-                <a class="btn primary" href="https://TU_LINK_ALBUM_SPOTIFY" target="_blank" rel="noreferrer">Abrir álbum →</a>
-                <a class="btn" href="https://TU_LINK_ALBUM_BANDCAMP" target="_blank" rel="noreferrer">Comprar / descargar →</a>
-              </div>
+              <strong>Invernario</strong><br />
+              <span>Spotify — álbum</span>
             </div>
-          </div>
+            <span>→</span>
+          </a>
 
-          <div class="grid">
-            <p class="sectionTitle">Enlaces</p>
-            <div class="list">
-              <a class="item" href="https://www.instagram.com/TU_IG" target="_blank" rel="noreferrer">
-                <div>
-                  <strong>Instagram</strong><br />
-                  <span>@TU_IG</span>
-                </div>
-                <span>→</span>
-              </a>
-
-              <a class="item" href="https://soundcloud.com/TU_SC" target="_blank" rel="noreferrer">
-                <div>
-                  <strong>SoundCloud</strong><br />
-                  <span>instrumental / demos</span>
-                </div>
-                <span>→</span>
-              </a>
-
-              <a class="item" href="https://TU_PRESS_KIT" target="_blank" rel="noreferrer">
-                <div>
-                  <strong>Press kit</strong><br />
-                  <span>bio + fotos + links</span>
-                </div>
-                <span>→</span>
-              </a>
+          <a class="item" target="_blank" rel="noreferrer"
+             href="https://www.youtube.com/watch?v=ciA40wFqpU0">
+            <div>
+              <strong>Invernario</strong><br />
+              <span>YouTube — video</span>
             </div>
-          </div>
-        </aside>
-      </section>
+            <span>→</span>
+          </a>
 
-      <footer>
-        <span>© <span id="y"></span> Luc0</span>
-        <span>Hecho con GitHub Pages</span>
-      </footer>
-    </main>
+          <a class="item" target="_blank" rel="noreferrer"
+             href="https://open.spotify.com/intl-es/artist/1XC5QPC8QSblWFKqXwPgWk?si=guK51KqDTz-veYmW-JtOaA">
+            <div>
+              <strong>Perfil</strong><br />
+              <span>Spotify — artista</span>
+            </div>
+            <span>→</span>
+          </a>
 
-    <script>
-      document.getElementById("y").textContent = new Date().getFullYear();
-    </script>
-  </body>
+          <a class="item" target="_blank" rel="noreferrer"
+             href="https://www.youtube.com/@luc0">
+            <div>
+              <strong>Perfil</strong><br />
+              <span>YouTube — canal</span>
+            </div>
+            <span>→</span>
+          </a>
+        </div>
+      </aside>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="y"></span> Luc0 • El Bolsón, Río Negro, Argentina</div>
+
+      <!-- Keywords “disimuladas” pero útiles -->
+      <div class="micro" aria-label="Etiquetas">
+        <span class="k">argentine solo piano</span>
+        <span class="k">piano instrumental</span>
+        <span class="k">ambient minimal</span>
+        <span class="k">patagonia artist</span>
+        <span class="k">invernario album</span>
+        <span class="k">el bolson rio negro</span>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
