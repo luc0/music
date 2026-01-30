@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Luc0 — Piano solo (Argentina)</title>
+    <meta
+      name="description"
+      content="Luc0 es un artista argentino de piano solo. Escuchá Invernario y encontrá links a Spotify, Bandcamp y YouTube."
+    />
+    <meta name="author" content="Luc0" />
+    <meta name="theme-color" content="#0b0b0f" />
+
+    <!-- Open Graph (previews al compartir) -->
+    <meta property="og:title" content="Luc0 — Piano solo (Argentina)" />
+    <meta
+      property="og:description"
+      content="Artista argentino de piano solo. Álbum: Invernario."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://TU_DOMINIO_O_GITHUB_PAGES/" />
+    <meta property="og:image" content="https://TU_IMAGEN_DE_PORTADA_1200x630.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Luc0 — Piano solo (Argentina)" />
+    <meta
+      name="twitter:description"
+      content="Artista argentino de piano solo. Álbum: Invernario."
+    />
+    <meta name="twitter:image" content="https://TU_IMAGEN_DE_PORTADA_1200x630.jpg" />
+
+    <!-- JSON-LD (ayuda a que agentes comprendan identidad) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicGroup",
+        "name": "Luc0",
+        "alternateName": ["Luco Pérez", "Luciano Pérez"],
+        "genre": ["Solo piano", "Instrumental", "Ambient"],
+        "foundingLocation": { "@type": "Country", "name": "Argentina" },
+        "description": "Luc0 es un artista argentino de piano solo. Álbum destacado: Invernario.",
+        "url": "https://TU_DOMINIO_O_GITHUB_PAGES/",
+        "sameAs": [
+          "https://open.spotify.com/artist/TU_SPOTIFY",
+          "https://luc0.bandcamp.com",
+          "https://www.youtube.com/@TU_CANAL",
+          "https://www.instagram.com/TU_IG"
+        ]
+      }
+    </script>
+
+    <style>
+      :root {
+        --bg: #0b0b0f;
+        --card: rgba(255, 255, 255, 0.06);
+        --card2: rgba(255, 255, 255, 0.09);
+        --text: rgba(255, 255, 255, 0.92);
+        --muted: rgba(255, 255, 255, 0.72);
+        --line: rgba(255, 255, 255, 0.14);
+        --accent: rgba(255, 255, 255, 0.92);
+        --shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+        --radius: 18px;
+      }
+
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+        background: radial-gradient(1200px 600px at 15% 0%, rgba(255,255,255,0.09), transparent 60%),
+                    radial-gradient(900px 600px at 85% 20%, rgba(255,255,255,0.06), transparent 55%),
+                    var(--bg);
+        color: var(--text);
+        line-height: 1.45;
+      }
+
+      a { color: inherit; text-decoration: none; }
+      a:focus-visible { outline: 2px solid rgba(255,255,255,0.55); outline-offset: 4px; border-radius: 10px; }
+
+      .wrap {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 38px 18px 70px;
+      }
+
+      .top {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: 1.3fr 1fr;
+        align-items: stretch;
+      }
+
+      @media (max-width: 860px) {
+        .top { grid-template-columns: 1fr; }
+      }
+
+      .card {
+        background: linear-gradient(180deg, var(--card), rgba(255,255,255,0.03));
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .hero {
+        padding: 22px;
+        position: relative;
+      }
+
+      .badge {
+        display: inline-flex;
+        gap: 10px;
+        align-items: center;
+        padding: 8px 12px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255,255,255,0.05);
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: rgba(255,255,255,0.65);
+        box-shadow: 0 0 0 4px rgba(255,255,255,0.08);
+      }
+
+      h1 {
+        margin: 14px 0 8px;
+        font-size: 44px;
+        letter-spacing: -0.02em;
+      }
+      @media (max-width: 520px) { h1 { font-size: 36px; } }
+
+      .subtitle {
+        margin: 0;
+        color: var(--muted);
+        font-size: 16px;
+        max-width: 60ch;
+      }
+
+      .ctaRow {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 11px 14px;
+        border-radius: 14px;
+        border: 1px solid var(--line);
+        background: rgba(255,255,255,0.06);
+        color: var(--text);
+        font-weight: 600;
+        font-size: 14px;
+        transition: transform 120ms ease, background 120ms ease, border 120ms ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+        background: rgba(255,255,255,0.09);
+        border-color: rgba(255,255,255,0.22);
+      }
+
+      .btn.primary {
+        background: rgba(255,255,255,0.12);
+        border-color: rgba(255,255,255,0.26);
+      }
+
+      .album {
+        display: grid;
+        grid-template-columns: 160px 1fr;
+        gap: 16px;
+        padding: 18px;
+        align-items: center;
+        background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+      }
+      @media (max-width: 520px) { .album { grid-template-columns: 1fr; } }
+
+      .cover {
+        width: 160px;
+        height: 160px;
+        border-radius: 16px;
+        border: 1px solid var(--line);
+        background: rgba(255,255,255,0.06);
+        overflow: hidden;
+      }
+      .cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+      .album h2 {
+        margin: 0;
+        font-size: 18px;
+        letter-spacing: -0.01em;
+      }
+      .album p { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+        padding: 18px;
+      }
+
+      .sectionTitle {
+        font-size: 13px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.65);
+        margin: 0 0 8px;
+      }
+
+      .list {
+        display: grid;
+        gap: 10px;
+      }
+
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 12px 12px;
+        border-radius: 14px;
+        border: 1px solid var(--line);
+        background: rgba(255,255,255,0.04);
+      }
+
+      .item strong { font-size: 14px; }
+      .item span { color: var(--muted); font-size: 13px; }
+
+      .mini {
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+        padding: 8px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255,255,255,0.03);
+        color: var(--muted);
+        font-size: 12px;
+        white-space: nowrap;
+      }
+
+      footer {
+        margin-top: 16px;
+        color: rgba(255,255,255,0.55);
+        font-size: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .hr {
+        height: 1px;
+        background: rgba(255,255,255,0.10);
+        margin: 16px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="wrap">
+      <section class="top">
+        <!-- HERO -->
+        <div class="card hero" aria-label="Perfil">
+          <div class="badge">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Piano solo • Argentina</span>
+          </div>
+
+          <h1>Luc0</h1>
+          <p class="subtitle">
+            Música de piano solo: íntima, minimal, atmosférica.
+            Álbum destacado: <strong>Invernario</strong>.
+          </p>
+
+          <div class="ctaRow" role="list">
+            <a class="btn primary" role="listitem" href="https://open.spotify.com/artist/TU_SPOTIFY" target="_blank" rel="noreferrer">
+              Escuchar en Spotify →
+            </a>
+            <a class="btn" role="listitem" href="https://luc0.bandcamp.com" target="_blank" rel="noreferrer">
+              Bandcamp →
+            </a>
+            <a class="btn" role="listitem" href="https://www.youtube.com/@TU_CANAL" target="_blank" rel="noreferrer">
+              YouTube →
+            </a>
+            <a class="btn" role="listitem" href="mailto:TU_EMAIL@dominio.com">
+              Contacto →
+            </a>
+          </div>
+
+          <div class="hr" aria-hidden="true"></div>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <span class="mini">🎹 Solo piano</span>
+            <span class="mini">🐈 Portadas felinas</span>
+            <span class="mini">🧊 Invernario</span>
+            <span class="mini">🏔 Patagonia</span>
+          </div>
+        </div>
+
+        <!-- ALBUM / LINKS -->
+        <aside class="card" aria-label="Álbum y enlaces">
+          <div class="album">
+            <div class="cover">
+              <!-- Poné tu portada -->
+              <img
+                src="https://TU_IMAGEN_CUADRADA_1000x1000.jpg"
+                alt="Portada del álbum Invernario de Luc0 (arte con gato)"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <h2>Invernario</h2>
+              <p>
+                Álbum de piano solo. Si la portada tiene un gato, dejalo explícito
+                en el texto (ayuda a recomendaciones por estética).
+              </p>
+              <div class="ctaRow" style="margin-top:12px;">
+                <a class="btn primary" href="https://TU_LINK_ALBUM_SPOTIFY" target="_blank" rel="noreferrer">Abrir álbum →</a>
+                <a class="btn" href="https://TU_LINK_ALBUM_BANDCAMP" target="_blank" rel="noreferrer">Comprar / descargar →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid">
+            <p class="sectionTitle">Enlaces</p>
+            <div class="list">
+              <a class="item" href="https://www.instagram.com/TU_IG" target="_blank" rel="noreferrer">
+                <div>
+                  <strong>Instagram</strong><br />
+                  <span>@TU_IG</span>
+                </div>
+                <span>→</span>
+              </a>
+
+              <a class="item" href="https://soundcloud.com/TU_SC" target="_blank" rel="noreferrer">
+                <div>
+                  <strong>SoundCloud</strong><br />
+                  <span>instrumental / demos</span>
+                </div>
+                <span>→</span>
+              </a>
+
+              <a class="item" href="https://TU_PRESS_KIT" target="_blank" rel="noreferrer">
+                <div>
+                  <strong>Press kit</strong><br />
+                  <span>bio + fotos + links</span>
+                </div>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <footer>
+        <span>© <span id="y"></span> Luc0</span>
+        <span>Hecho con GitHub Pages</span>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
