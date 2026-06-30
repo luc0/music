@@ -1,487 +1,383 @@
 <!doctype html>
 <html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Luc0 • El Bolsón, Argentina</title>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Luc0 • El Bolsón, Argentina</title>
 
-  <meta name="description" content="Luc0: músico viviendo en el Bolsón, Río Negro, Argentina. Álbum: Invernario." />
-  <meta name="author" content="Luc0" />
-  <meta name="theme-color" content="#0b0b10" />
+        <meta
+            name="description"
+            content="Luc0: músico viviendo en el Bolsón, Río Negro, Argentina. Álbum: Invernario."
+        />
+        <meta name="author" content="Luc0" />
+        <meta name="theme-color" content="#0a0908" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Luc0 — Piano solo • El Bolsón, Argentina" />
-  <meta property="og:description" content="Piano solo e instrumental íntimo. Álbum: Invernario." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://TU_DOMINIO_O_GITHUB_PAGES/" />
-  <meta property="og:image" content="https://TU_IMAGEN_1200x630.jpg" />
+        <meta
+            property="og:title"
+            content="Luc0 — Piano solo • El Bolsón, Argentina"
+        />
+        <meta
+            property="og:description"
+            content="Piano solo e instrumental íntimo. Álbum: Invernario."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://TU_DOMINIO/" />
+        <meta property="og:image" content="https://TU_IMAGEN_1200x630.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Luc0 — Piano solo • El Bolsón, Argentina"
+        />
+        <meta
+            name="twitter:description"
+            content="Piano solo e instrumental íntimo. Álbum: Invernario."
+        />
+        <meta name="twitter:image" content="https://TU_IMAGEN_1200x630.jpg" />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Luc0 — Piano solo • El Bolsón, Argentina" />
-  <meta name="twitter:description" content="Piano solo e instrumental íntimo. Álbum: Invernario." />
-  <meta name="twitter:image" content="https://TU_IMAGEN_1200x630.jpg" />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "MusicGroup",
+                "name": "Luc0",
+                "description": "Artista viviendo en el Bolsón, Río Negro, Argentina. Álbum: Invernario.",
+                "genre": [
+                    "solo piano",
+                    "instrumental",
+                    "ambient",
+                    "minimal",
+                    "lo-fi"
+                ],
+                "foundingLocation": {
+                    "@type": "Place",
+                    "name": "El Bolsón, Río Negro, Argentina"
+                },
+                "sameAs": [
+                    "https://www.youtube.com/@luc0",
+                    "https://open.spotify.com/intl-es/artist/1XC5QPC8QSblWFKqXwPgWk?si=guK51KqDTz-veYmW-JtOaA"
+                ]
+            }
+        </script>
 
-  <!-- JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"MusicGroup",
-    "name":"Luc0",
-    "description":"Artista viviendo en el Bolsón, Río Negro, Argentina. Álbum: Invernario.",
-    "genre":["solo piano","instrumental","ambient","minimal","lo-fi"],
-    "foundingLocation":{"@type":"Place","name":"El Bolsón, Río Negro, Argentina"},
-    "sameAs":[
-      "https://www.youtube.com/@luc0",
-      "https://open.spotify.com/intl-es/artist/1XC5QPC8QSblWFKqXwPgWk?si=guK51KqDTz-veYmW-JtOaA"
-    ]
-  }
-  </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400&display=swap"
+            rel="stylesheet"
+        />
 
-  <style>
-    :root{
-      --bg:#0b0b10;
-      --fg:rgba(255,255,255,.92);
-      --muted:rgba(255,255,255,.70);
-      --hair:rgba(255,255,255,.14);
-      --card:rgba(255,255,255,.06);
-      --card2:rgba(255,255,255,.09);
-      --shadow:0 18px 70px rgba(0,0,0,.58);
-      --r:22px;
-      --max:1000px;
+        <style>
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            html,
+            body {
+                height: 100%;
+                overflow: hidden;
+            }
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+            a:focus-visible {
+                outline: 1px solid rgba(255, 255, 255, 0.5);
+                outline-offset: 6px;
+                border-radius: 3px;
+            }
 
-      /* lo-fi patagónico: un acento frío y un acento cálido muy sutiles */
-      --mist: rgba(160, 190, 255, .14);
-      --ember: rgba(255, 190, 150, .10);
-    }
+            body {
+                font-family: "IBM Plex Mono", "Courier New", monospace;
+                background: #0a0908;
+                color: rgba(255, 255, 255, 0.82);
+                letter-spacing: 0.03em;
+            }
 
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
-      color:var(--fg);
-      background: var(--bg);
-      line-height:1.5;
-      letter-spacing:.12px;
-      overflow-x:hidden;
-    }
-    a{color:inherit;text-decoration:none}
-    a:focus-visible{outline:2px solid rgba(255,255,255,.6); outline-offset:4px; border-radius:12px}
+            /* ── VIDEO DE FONDO ── */
+            .bg-video {
+                position: fixed;
+                inset: 0;
+                z-index: 0;
+            }
+            .bg-video video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+                /* look analógico: desaturado, oscuro */
+                filter: saturate(0.3) brightness(0.42) contrast(1.12);
+            }
 
-    /* ======= Parallax layer ======= */
-    .parallax {
-      position: fixed;
-      inset: 0;
-      z-index: -3;
-      background-image: url("./invernario.jpg");
-      background-size: cover;
-      background-position: center;
-      transform: translate3d(0,0,0) scale(1.08);
-      filter: saturate(.92) contrast(1.06) brightness(.62);
-      will-change: transform;
-    }
+            /* viñeta fuerte */
+            .vignette {
+                position: fixed;
+                inset: 0;
+                z-index: 1;
+                background: radial-gradient(
+                    ellipse 78% 78% at 50% 50%,
+                    transparent 32%,
+                    rgba(0, 0, 0, 0.9) 100%
+                );
+                pointer-events: none;
+            }
 
-    /* Neblina + viñeta + gradientes “patagónicos” */
-    .atmo {
-      position: fixed;
-      inset: 0;
-      z-index: -2;
-      background:
-        radial-gradient(1000px 700px at 12% 8%, var(--mist), transparent 60%),
-        radial-gradient(900px 700px at 88% 18%, var(--ember), transparent 60%),
-        radial-gradient(1000px 900px at 50% 110%, rgba(255,255,255,.07), transparent 60%),
-        linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.72));
-      pointer-events:none;
-    }
+            /* grain sutil */
+            .grain {
+                position: fixed;
+                inset: -200%;
+                width: 500%;
+                height: 500%;
+                z-index: 2;
+                pointer-events: none;
+                opacity: 0.038;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='320' height='320' filter='url(%23g)'/%3E%3C/svg%3E");
+                animation: grainShift 0.14s steps(1) infinite;
+                mix-blend-mode: screen;
+            }
+            @keyframes grainShift {
+                0% {
+                    transform: translate(0, 0);
+                }
+                20% {
+                    transform: translate(-3%, -4%);
+                }
+                40% {
+                    transform: translate(4%, 3%);
+                }
+                60% {
+                    transform: translate(-2%, 5%);
+                }
+                80% {
+                    transform: translate(5%, -3%);
+                }
+            }
 
-    /* Grano/ruido (disimulado) */
-    .grain {
-      position: fixed;
-      inset: -50%;
-      z-index: -1;
-      pointer-events:none;
-      opacity: .14;
-      background-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='280' height='280' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
-      transform: rotate(4deg);
-      mix-blend-mode: overlay;
-    }
+            /* ── CONTENIDO ── */
+            .wrap {
+                position: fixed;
+                inset: 0;
+                z-index: 10;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding: 0 48px 52px;
+                max-width: 900px;
+            }
+            @media (max-width: 600px) {
+                .wrap {
+                    padding: 0 28px 40px;
+                }
+            }
 
-    .wrap{max-width:var(--max); margin:0 auto; padding:46px 18px 86px}
+            /* nombre */
+            h1 {
+                font-family: "Inter", "IBM Plex Mono", sans-serif;
+                font-size: clamp(48px, 8vw, 88px);
+                font-weight: 600;
+                line-height: 0.92;
+                letter-spacing: -0.02em;
+                color: rgba(255, 255, 255, 0.92);
+                margin-bottom: 18px;
+                /* leve text-shadow para legibilidad sobre video */
+                text-shadow: 0 2px 40px rgba(0, 0, 0, 0.55);
+            }
 
-    .top{
-      display:flex;
-      gap:12px;
-      align-items:center;
-      justify-content:space-between;
-      margin-bottom:22px;
-    }
+            /* línea de descripción */
+            .sub {
+                font-size: clamp(12px, 1.4vw, 14px);
+                font-weight: 300;
+                color: rgba(255, 255, 255, 0.48);
+                letter-spacing: 0.08em;
+                margin-bottom: 32px;
+                /*text-transform: uppercase;*/
+                line-height: 1.8;
+            }
+            .sub span {
+                color: rgba(255, 255, 255, 0.22);
+                margin: 0 10px;
+            }
 
-    .mark{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding:10px 12px;
-      border:1px solid var(--hair);
-      border-radius:999px;
-      background:rgba(255,255,255,.04);
-      color:rgba(255,255,255,.78);
-      font-size:13px;
-      backdrop-filter: blur(10px);
-    }
-    .dot{
-      width:8px; height:8px; border-radius:999px;
-      background:rgba(255,255,255,.78);
-      box-shadow:0 0 0 4px rgba(255,255,255,.08);
-      flex:0 0 auto;
-    }
+            /* links */
+            .links {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                align-items: center;
+            }
 
-    .hero{
-      display:grid;
-      grid-template-columns: 1.2fr .9fr;
-      gap:16px;
-      align-items:stretch;
-    }
-    @media (max-width:900px){ .hero{grid-template-columns:1fr} }
+            .lnk {
+                font-size: 11px;
+                font-weight: 400;
+                letter-spacing: 0.18em;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.45);
+                padding: 8px 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+                transition:
+                    color 160ms ease,
+                    border-color 160ms ease;
+                white-space: nowrap;
+            }
+            .lnk:hover {
+                color: rgba(255, 255, 255, 0.88);
+                border-color: rgba(255, 255, 255, 0.55);
+            }
+            .lnk.main {
+                color: rgba(255, 255, 255, 0.7);
+                border-color: rgba(255, 255, 255, 0.35);
+            }
+            .lnk.main:hover {
+                color: #fff;
+                border-color: #fff;
+            }
 
-    .card{
-      border:1px solid rgba(255,255,255,.14);
-      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
-      border-radius: var(--r);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      backdrop-filter: blur(12px);
-    }
+            .sep {
+                width: 1px;
+                height: 14px;
+                background: rgba(255, 255, 255, 0.12);
+                flex: 0 0 auto;
+            }
 
-    .intro{ padding:22px; }
+            /* ubicación en la esquina superior derecha */
+            .loc {
+                position: fixed;
+                top: 44px;
+                right: 48px;
+                z-index: 10;
+                font-size: 10px;
+                letter-spacing: 0.22em;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.28);
+                text-align: right;
+                line-height: 1.9;
+            }
+            @media (max-width: 600px) {
+                .loc {
+                    top: 28px;
+                    right: 28px;
+                }
+            }
 
-    h1{
-      margin:8px 0 10px;
-      font-size:50px;
-      letter-spacing:-.035em;
-      font-weight:750;
-    }
-    @media (max-width:520px){ h1{font-size:40px} }
+            /* año en la esquina inferior derecha */
+            .yr {
+                position: fixed;
+                bottom: 52px;
+                right: 48px;
+                z-index: 10;
+                font-size: 10px;
+                letter-spacing: 0.22em;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.2);
+            }
+            @media (max-width: 600px) {
+                .yr {
+                    bottom: 40px;
+                    right: 28px;
+                }
+            }
 
-    .sub{
-      margin:0;
-      color:var(--muted);
-      max-width:64ch;
-      font-size:15px;
-    }
+            /* fade-in al cargar */
+            .wrap,
+            .loc,
+            .yr {
+                opacity: 0;
+                animation: fadeIn 1.4s ease 0.4s forwards;
+            }
+            @keyframes fadeIn {
+                to {
+                    opacity: 1;
+                }
+            }
 
-    .meta{
-      margin-top:14px;
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      align-items:center;
-    }
-
-    .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:8px 10px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.13);
-      background:rgba(255,255,255,.03);
-      color:rgba(255,255,255,.78);
-      font-size:12px;
-      white-space:nowrap;
-    }
-
-    .actions{
-      margin-top:16px;
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-    }
-
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-      padding:11px 14px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.14);
-      background:rgba(255,255,255,.05);
-      font-weight:680;
-      font-size:14px;
-      transition: transform 140ms ease, background 140ms ease, border-color 140ms ease;
-    }
-    .btn:hover{
-      transform:translateY(-1px);
-      background:rgba(255,255,255,.085);
-      border-color:rgba(255,255,255,.24);
-    }
-    .btn.primary{
-      background:rgba(255,255,255,.14);
-      border-color:rgba(255,255,255,.28);
-    }
-
-    .side{ display:flex; flex-direction:column; }
-
-    .album{
-      padding:18px;
-      display:flex;
-      gap:14px;
-      align-items:flex-start;
-      background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.03));
-      border-bottom:1px solid rgba(255,255,255,.10);
-      position: relative;
-    }
-
-    /* detalle “lo-fi”: pequeña línea/artefacto */
-    .album::after{
-      content:"";
-      position:absolute;
-      left:18px; right:18px; bottom:-1px;
-      height:1px;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,.22), transparent);
-      opacity:.55;
-    }
-
-    .cover{
-      width:118px; height:118px;
-      border-radius:20px;
-      border:1px solid rgba(255,255,255,.16);
-      background:rgba(255,255,255,.05);
-      overflow:hidden;
-      flex:0 0 auto;
-      position:relative;
-      transform: translateZ(0);
-    }
-
-    /* brillo suave en la tapa */
-    .cover::before{
-      content:"";
-      position:absolute; inset:-40%;
-      background: radial-gradient(circle at 30% 20%, rgba(255,255,255,.25), transparent 45%);
-      opacity:.35;
-      transform: rotate(10deg);
-      pointer-events:none;
-      mix-blend-mode: screen;
-    }
-
-    .cover img{
-      width:100%; height:100%;
-      object-fit:cover;
-      display:block;
-      filter: contrast(1.03) saturate(.95);
-    }
-
-    .album h2{ margin:0; font-size:16px; letter-spacing:-.01em; }
-    .album p{ margin:6px 0 0; color:var(--muted); font-size:13px; }
-
-    .list{
-      padding:16px 18px 18px;
-      display:grid;
-      gap:10px;
-    }
-
-    .item{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      padding:12px 12px;
-      border-radius:16px;
-      border:1px solid rgba(255,255,255,.14);
-      background:rgba(255,255,255,.03);
-      transition: background 140ms ease, border-color 140ms ease, transform 140ms ease;
-    }
-    .item:hover{
-      background:rgba(255,255,255,.06);
-      border-color:rgba(255,255,255,.24);
-      transform:translateY(-1px);
-    }
-    .item strong{font-size:14px}
-    .item span{color:var(--muted); font-size:13px}
-
-    .footer{
-      margin-top:22px;
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      align-items:center;
-      justify-content:space-between;
-      color:rgba(255,255,255,.58);
-      font-size:12px;
-    }
-
-    /* Keywords disimuladas pero visibles como “tags” */
-    .micro{
-      display:flex; flex-wrap:wrap; gap:8px;
-      opacity:.85;
-      user-select:none;
-    }
-    .micro .k{
-      padding:6px 9px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.11);
-      background:rgba(255,255,255,.02);
-      color:rgba(255,255,255,.56);
-      font-size:11px;
-      letter-spacing:.02em;
-    }
-
-    /* accesibilidad: si el usuario prefiere menos movimiento, sin parallax */
-    @media (prefers-reduced-motion: reduce){
-      .parallax{ transform:none !important; }
-      .btn, .item{ transition:none; }
-    }
-  </style>
-</head>
-
-<body>
-  <!-- capas de fondo -->
-  <div class="parallax" aria-hidden="true"></div>
-  <div class="atmo" aria-hidden="true"></div>
-  <div class="grain" aria-hidden="true"></div>
-
-  <main class="wrap">
-    <header class="top">
-      <div class="mark"><span class="dot" aria-hidden="true"></span><span>Piano solo • El Bolsón</span></div>
-      <!--<div class="mark" title="Links principales">lo-fi patagónico</div>-->
-    </header>
-
-    <section class="hero">
-      <!-- Intro -->
-      <div class="card intro">
-        <h1>Luc0</h1>
-        <p class="sub">
-          Hola!, soy Luciano y este es mi proyecto musical independiente desde El Bolsón, Patagonia.<br/>
-          Tengo un EP de piano lo-fi, grabado en 2020.<br/>
-          Estoy cocinando otro más, con otros instrumentos.
-        </p>
-
-        <!--<div class="meta" aria-label="Detalles">
-          <span class="pill">🎹 solo piano</span>
-          <span class="pill">🧊 Invernario</span>
-          <span class="pill">🏔 Patagonia</span>
-          <span class="pill">🌙 ambient / minimal</span>
-        </div>-->
-
-        <div class="actions" aria-label="Acciones">
-          <a class="btn primary" target="_blank" rel="noreferrer"
-             href="https://open.spotify.com/intl-es/artist/1XC5QPC8QSblWFKqXwPgWk?si=guK51KqDTz-veYmW-JtOaA">
-            Spotify →
-          </a>
-          <a class="btn" target="_blank" rel="noreferrer"
-             href="https://www.youtube.com/@luc0">
-            YouTube →
-          </a>
-          <a class="btn" target="_blank" rel="noreferrer"
-             href="https://www.instagram.com/luco.perez/">
-            Instagram →
-          </a>
-        </div>
-      </div>
-
-      <!-- Side -->
-      <aside class="card side" aria-label="Álbum y enlaces">
-        <div class="album">
-          <div class="cover">
-            <img src="./invernario.jpg" alt="Portada de Invernario de Luc0" loading="lazy" />
-          </div>
-
-          <div>
-            <h2>Invernario</h2>
-            <p>Álbum de piano solo, grabado en Buenos Aires. Escuchalo en Spotify o mirá el video en YouTube.</p>
-
-            <div class="actions" style="margin-top:10px;">
-              <a class="btn primary" target="_blank" rel="noreferrer"
-                 href="https://open.spotify.com/intl-es/album/4TxqJn5qNkF1pH0zqUXf7h?si=xAL4pFZkSZiC8CdSyiIxGw">
-                Esuchá en Spotify →
-              </a>
-              <a class="btn" target="_blank" rel="noreferrer"
-                 href="https://www.youtube.com/watch?v=ciA40wFqpU0">
-                Escucha en YouTube →
-              </a>
-            </div>
-          </div>
+            @media (prefers-reduced-motion: reduce) {
+                .grain {
+                    animation: none;
+                }
+                .wrap,
+                .loc,
+                .yr {
+                    animation: none;
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- video de fondo aleatorio -->
+        <div class="bg-video">
+            <video id="bgvid" autoplay muted loop playsinline></video>
         </div>
 
-        <!--<div class="list" aria-label="Links directos">
-          <a class="item" target="_blank" rel="noreferrer"
-             href="https://open.spotify.com/intl-es/album/4TxqJn5qNkF1pH0zqUXf7h?si=xAL4pFZkSZiC8CdSyiIxGw">
-            <div>
-              <strong>Invernario</strong><br />
-              <span>Spotify — álbum</span>
-            </div>
-            <span>→</span>
-          </a>
+        <div class="vignette" aria-hidden="true"></div>
+        <div class="grain" aria-hidden="true"></div>
 
-          <a class="item" target="_blank" rel="noreferrer"
-             href="https://www.youtube.com/watch?v=ciA40wFqpU0">
-            <div>
-              <strong>Invernario</strong><br />
-              <span>YouTube — video</span>
-            </div>
-            <span>→</span>
-          </a>
+        <!-- ubicación -->
+        <div class="loc" aria-label="Ubicación">
+            El Bolsón<br />
+            Río Negro, Argentina
+        </div>
 
-          <a class="item" target="_blank" rel="noreferrer"
-             href="https://open.spotify.com/intl-es/artist/1XC5QPC8QSblWFKqXwPgWk?si=guK51KqDTz-veYmW-JtOaA">
-            <div>
-              <strong>Perfil</strong><br />
-              <span>Spotify — artista</span>
-            </div>
-            <span>→</span>
-          </a>
+        <!-- contenido principal -->
+        <main class="wrap">
+            <h1>Luc0</h1>
 
-          <a class="item" target="_blank" rel="noreferrer"
-             href="https://www.youtube.com/@luc0">
-            <div>
-              <strong>Perfil</strong><br />
-              <span>YouTube — canal</span>
-            </div>
-            <span>→</span>
-          </a>
-        </div>-->
-      </aside>
-    </section>
+            <p class="sub">
+                Hola!, <br />
+                Soy luco · Acá voy a poner las cosas que hago músicalmente
+                hablando<span>·</span>:)<span>·</span>
+                <br />
+                Espero que sea de tu agrado ·
+            </p>
 
-    <footer class="footer">
-      <div>© <span id="y"></span> Luc0 • El Bolsón, Río Negro, Argentina</div>
+            <nav class="links" aria-label="Links">
+                <a
+                    class="lnk main"
+                    href="https://open.spotify.com/intl-es/artist/1XC5QPC8QSblWFKqXwPgWk?si=guK51KqDTz-veYmW-JtOaA"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Invernario (EP 2021) — Spotify
+                </a>
+                <div class="sep" aria-hidden="true"></div>
+                <a
+                    class="lnk"
+                    href="https://www.youtube.com/@luc0"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    YouTube
+                </a>
+                <div class="sep" aria-hidden="true"></div>
+                <a
+                    class="lnk"
+                    href="https://www.instagram.com/luco.perez/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Instagram
+                </a>
+            </nav>
+        </main>
 
-      <!--<div class="micro" aria-label="Etiquetas">
-        <span class="k">argentine solo piano</span>
-        <span class="k">piano instrumental</span>
-        <span class="k">lo-fi ambient</span>
-        <span class="k">minimal piano</span>
-        <span class="k">patagonia artist</span>
-        <span class="k">invernario album</span>
-        <span class="k">el bolson rio negro</span>
-      </div>-->
-    </footer>
-  </main>
+        <!-- año -->
+        <div class="yr" id="yr"></div>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
+        <script>
+            // año
+            document.getElementById("yr").textContent =
+                "© " + new Date().getFullYear();
 
-    // Parallax suave: mueve el fondo según scroll
-    // (con reduces-motion respetado por CSS)
-    const layer = document.querySelector(".parallax");
-    let ticking = false;
-
-    function onScroll() {
-      if (ticking) return;
-      ticking = true;
-
-      requestAnimationFrame(() => {
-        const y = window.scrollY || 0;
-        // factor bajo para que sea elegante (no “parque de diversiones”)
-        const offset = Math.min(120, y * 0.12);
-        layer.style.transform = `translate3d(0, ${-offset}px, 0) scale(1.08)`;
-        ticking = false;
-      });
-    }
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-  </script>
-</body>
+            // video aleatorio de los 3
+            const videos = ["vid1.mp4", "vid2.mp4", "vid3.mp4"];
+            const pick = videos[Math.floor(Math.random() * videos.length)];
+            const vid = document.getElementById("bgvid");
+            vid.src = pick;
+            vid.load();
+            vid.play().catch(() => {
+                // si autoplay falla (política del browser) igual queda el fondo oscuro
+            });
+        </script>
+    </body>
 </html>
